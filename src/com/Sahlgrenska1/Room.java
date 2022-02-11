@@ -1,4 +1,4 @@
 package com.Sahlgrenska1;
 
-public class room {
+public class Room {
 }
