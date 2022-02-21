@@ -25,6 +25,7 @@ public class Main {
         s1.addEmployee(new Employees("hamood","hamood123",50000,50,"kirurg"));
         s1.addEmployee(new Employees("william","william123",50000,50,"kirurg"));
 
+        s1.addSahlgrenskaPatient(usernNameLogIn, userPassLogIn, "Albin", 8);
 
 
         System.out.println("Press (0) to print menu \n" +
@@ -55,6 +56,11 @@ public class Main {
                     break;
                 case 1 :
                     System.out.println(s1.getEmployees());
+                    break;
+                case 2 :
+                    System.out.println("Enter patient name");
+                    String name = sc.next();
+                    System.out.println(s1.findPatient(usernNameLogIn,userPassLogIn, name));
                     break;
                 default:
                     System.out.println("fel input");

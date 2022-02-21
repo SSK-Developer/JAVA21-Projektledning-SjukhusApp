@@ -74,6 +74,15 @@ public class Employees {
         patientsList.add(patient);
     }
 
+    public Patients findPatient(String name){
+        for(var item :patientsList){
+            if(item.getName().equals(name)){
+                return item;
+            }
+        }
+        return null;
+    }
+
     public List<String> getEmployeePatients(){
         List<String>patients = new ArrayList<>();
         for (var item: patientsList){

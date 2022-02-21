@@ -43,6 +43,17 @@ public class Sahlgrenska {
         return patients;
     }
 
+
+    public Patients findPatient(String userName, String password, String name){
+        for(var item : employees){
+            if(item.getName().equals(userName) && item.getPassword().equals(password)){
+                return item.findPatient(name);
+            }
+        }
+        return null;
+    }
+
+
     public void removePatient(String name, String password, int index){
         for(var item: employees){
             if(name.equals(item.getName()) && password.equals(item.getPassword())){
