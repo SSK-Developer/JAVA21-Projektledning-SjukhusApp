@@ -48,4 +48,13 @@ public class Sahlgrenska {
             }
         }
     }
+
+    public boolean logInCheck(String name, String password){
+        for (var item:employees){
+            if(name==item.getName() && password == item.getPassword()){
+                return true;
+            }
+        }
+        return false;
+    }
 }
