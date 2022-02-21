@@ -53,6 +53,9 @@ public class Main {
                     break;
                 case 1 :
                     System.out.println(s1.getEmployees());
+                    break;
+                default:
+                    System.out.println("fel input");
             }
         }
     }
