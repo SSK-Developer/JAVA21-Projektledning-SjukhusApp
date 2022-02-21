@@ -62,6 +62,7 @@ public class Sahlgrenska {
         }
     }
 
+
     public boolean logInCheck(String name, String password){
         for (var item:employees){
             if(name.equals(item.getName()) && password.equals(item.getPassword())){
