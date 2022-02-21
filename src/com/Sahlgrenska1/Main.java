@@ -18,10 +18,10 @@ public class Main {
         System.out.println(s1.logInCheck(usernNameLogIn,userPassLogIn));
 
         //Add employees
-        s1.addEmployee(new Employees("safer","safer123",50000,50,"kirurg","null"));
-        s1.addEmployee(new Employees("noah","noah123",50000,50,"kirurg","null"));
-        s1.addEmployee(new Employees("hamood","hamood123",50000,50,"kirurg","null"));
-        s1.addEmployee(new Employees("william","william123",50000,50,"kirurg","null"));
+        s1.addEmployee(new Employees("safer","safer123",50000,50,"kirurg"));
+        s1.addEmployee(new Employees("noah","noah123",50000,50,"kirurg"));
+        s1.addEmployee(new Employees("hamood","hamood123",50000,50,"kirurg"));
+        s1.addEmployee(new Employees("william","william123",50000,50,"kirurg"));
 
 
 
