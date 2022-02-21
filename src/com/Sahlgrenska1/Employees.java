@@ -11,16 +11,15 @@ public class Employees {
     int hours;
     String speciality;
     String patients;
-    private List<Patients> patientsList;
+    private List<Patients> patientsList = new ArrayList<>();
 
-    public Employees(String name, String password, int salary, int hours, String speciality, String patients) {
+    public Employees(String name, String password, int salary, int hours, String speciality) {
         this.name = name;
         this.password = password;
         this.salary = salary;
         this.hours = hours;
         this.speciality = speciality;
-        this.patients = patients;
-        patientsList = new ArrayList<>();
+
     }
 
     public String getName() {
