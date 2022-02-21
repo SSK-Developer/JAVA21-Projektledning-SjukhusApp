@@ -25,7 +25,7 @@ public class Sahlgrenska {
 
     public void addSahlgrenskaPatient(String name, String password, String patientName, int condition){
         for( var item :employees){
-            if (name == item.getName() && password == item.getPassword()){
+            if (name.equals(item.getName()) && password.equals(item.getPassword())){
                 item.addPatient(new Patients(patientName,condition));
             }
         }
@@ -34,7 +34,7 @@ public class Sahlgrenska {
     public List<String> getPatients(String name, String password){
         List<String>patients = new ArrayList<>();
         for (var item :employees){
-            if (name==item.getName() && password == item.getPassword()){
+            if (name.equals(item.getName()) && password.equals(item.getPassword())){
                 patients.add("Patient(s): " + item.getEmployeePatients());
             }
         }

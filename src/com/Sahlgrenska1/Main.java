@@ -1,4 +1,5 @@
 package com.Sahlgrenska1;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -17,9 +18,9 @@ public class Main {
 
         System.out.println("Vänligen logga in med namn och lösenord nedan: ");
         System.out.println("Namn: ");
-        String usernNameLogIn = sc.nextLine();
+        String usernNameLogIn = sc.nextLine().toLowerCase().trim();
         System.out.println("Lösenord: ");
-        String userPassLogIn = sc.nextLine();
+        String userPassLogIn = sc.nextLine().toLowerCase().trim();
 
 
         System.out.println(s1.logInCheck(usernNameLogIn,userPassLogIn));
