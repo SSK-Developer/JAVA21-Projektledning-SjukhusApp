@@ -5,6 +5,11 @@ public class Patients {
     int condition;
     Room room;
 
+    public Patients(String name, int condition) {
+        this.name = name;
+        this.condition = condition;
+    }
+
     public Patients(String name, int condition, Room room) {
         this.name = name;
         this.condition = condition;

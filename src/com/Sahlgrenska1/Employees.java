@@ -1,5 +1,8 @@
 package com.Sahlgrenska1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Employees {
 
     String name;
@@ -8,6 +11,7 @@ public class Employees {
     int hours;
     String speciality;
     String patients;
+    private List<Patients> patientsList;
 
     public Employees(String name, String password, int salary, int hours, String speciality, String patients) {
         this.name = name;
@@ -16,6 +20,7 @@ public class Employees {
         this.hours = hours;
         this.speciality = speciality;
         this.patients = patients;
+        patientsList = new ArrayList<>();
     }
 
     public String getName() {
@@ -64,6 +69,24 @@ public class Employees {
 
     public void setPatients(String patients) {
         this.patients = patients;
+    }
+
+    public void addPatient(Patients patient){
+        patientsList.add(patient);
+    }
+
+    public List<String> getEmployeePatients(){
+        List<String>patients = new ArrayList<>();
+        for (var item: patientsList){
+            patients.add(String.valueOf(item.getName()));
+            patients.add(String.valueOf(item.getCondition()));
+            //patients.add(item.getRoom());
+        }
+        return patients;
+    }
+
+    public void removePatient1(int index){
+        patientsList.remove(index-1);
     }
 
 }
