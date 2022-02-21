@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void runApp(){
+        System.out.println("hell");
         Scanner sc = new Scanner(System.in);
         Sahlgrenska s1 = new Sahlgrenska();
 
