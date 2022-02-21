@@ -5,12 +5,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void runApp(){
-
         Scanner sc = new Scanner(System.in);
         Sahlgrenska s1 = new Sahlgrenska();
 
-        System.out.println("h3j");
-        System.out.println("hello");
         System.out.println("Vänligen logga in med namn och lösenord nedan: ");
         System.out.println("Namn: ");
         String usernNameLogIn = sc.nextLine().toLowerCase().trim();
