@@ -15,6 +15,8 @@ public class Main {
         String userPassLogIn = sc.nextLine().toLowerCase().trim();
 
 
+        System.out.println("dawdas");
+
         System.out.println(s1.logInCheck(usernNameLogIn,userPassLogIn));
 
         //Add employees
