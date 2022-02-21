@@ -43,7 +43,7 @@ public class Sahlgrenska {
 
     public void removePatient(String name, String password, int index){
         for(var item: employees){
-            if(name == item.getName() && password == item.getPassword()){
+            if(name.equals(item.getName()) && password.equals(item.getPassword())){
                 item.removePatient1(index);
             }
         }
@@ -51,7 +51,7 @@ public class Sahlgrenska {
 
     public boolean logInCheck(String name, String password){
         for (var item:employees){
-            if(name==item.getName() && password == item.getPassword()){
+            if(name.equals(item.getName()) && password.equals(item.getPassword())){
                 return true;
             }
         }
