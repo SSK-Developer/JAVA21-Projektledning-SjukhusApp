@@ -1,26 +1,32 @@
 package com.Sahlgrenska1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Room {
 
-    //Constructor
-    public Room(String name, String department, String equipment, String size, String patient ,int hours) {
-        this.name = name;
-        this.department = department;
-        this.equipment = equipment;
-        this.size = size;
-        this.hours = hours;
-        this.patient = patient;
-    }
-
     //States
-    String patient;
+    Patients patient;
     String name;
     String department;
-    String equipment;
-    String size;
-    int hours;
+    List<Drugs> drugs;
+    List<Equipment> equipments;
 
-    //Getters&Setters
+    //Constructor
+
+
+    public Room(Patients patient, String name, String department, List<Drugs> drugs, List<Equipment> equipments) {
+        this.patient = patient;
+        this.name = name;
+        this.department = department;
+        drugs = new ArrayList<>();
+        equipments = new ArrayList<>();
+    }
+
+    public Patients getPatient() {
+        return patient;
+    }
+
     public String getName() {
         return name;
     }
@@ -29,23 +35,11 @@ public class Room {
         return department;
     }
 
-    public String getEquipment() {
-        return equipment;
+    public List<Drugs> getDrugs() {
+        return drugs;
     }
 
-    public String getSize() {
-        return size;
-    }
-
-    public String getPatient(){
-        return patient;
-    }
-
-    public int getHours(){
-        return hours;
-    }
-
-    public void setHours(int hours){
-        this.hours = hours;
+    public List<Equipment> getEquipments() {
+        return equipments;
     }
 }

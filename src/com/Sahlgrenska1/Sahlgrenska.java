@@ -3,7 +3,9 @@ package com.Sahlgrenska1;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Sahlgrenska {
+
 
     public Sahlgrenska(){
         employees = new ArrayList<>();
@@ -44,7 +46,7 @@ public class Sahlgrenska {
     public void removePatient(String name, String password, int index){
         for(var item: employees){
             if(name.equals(item.getName()) && password.equals(item.getPassword())){
-                item.removePatient1(index);
+                item.removePatient1(index-1);
             }
         }
     }

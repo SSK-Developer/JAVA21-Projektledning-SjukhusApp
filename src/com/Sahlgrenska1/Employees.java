@@ -86,7 +86,7 @@ public class Employees {
     }
 
     public void removePatient1(int index){
-        patientsList.remove(index-1);
+        patientsList.remove(index);
     }
 
 }

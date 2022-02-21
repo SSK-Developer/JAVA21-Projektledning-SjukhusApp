@@ -36,4 +36,13 @@ public class Patients {
     public void setRoom(Room room) {
         this.room = room;
     }
+
+    @Override
+    public String toString() {
+        return "Patients{" +
+                "name='" + name + '\'' +
+                ", condition=" + condition +
+                ", room=" + room +
+                '}';
+    }
 }
