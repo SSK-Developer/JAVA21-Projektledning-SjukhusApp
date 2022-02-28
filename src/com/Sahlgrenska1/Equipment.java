@@ -26,8 +26,17 @@ public class Equipment {
     public int getNumOfAvailable() {
         return numOfAvailable;
     }
+
     public void setNumOfAvailable(int numOfAvailable) {
         this.numOfAvailable = numOfAvailable;
     }
 
+    @Override
+    public String toString() {
+        return "Equipment{" +
+                "name='" + name + '\'' +
+                ", descriptions='" + descriptions + '\'' +
+                ", numOfAvailable=" + numOfAvailable +
+                '}';
+    }
 }

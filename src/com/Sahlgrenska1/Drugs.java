@@ -30,4 +30,12 @@ public class Drugs {
         this.numOfAvailable = numOfAvailable;
     }
 
+    @Override
+    public String toString() {
+        return "Drugs{" +
+                "name='" + name + '\'' +
+                ", descriptions='" + descriptions + '\'' +
+                ", numOfAvailable=" + numOfAvailable +
+                '}';
+    }
 }

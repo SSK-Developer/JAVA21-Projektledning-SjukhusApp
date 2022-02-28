@@ -72,6 +72,7 @@ public class Employees {
 
     public void addPatient(Patients patient){
         patientsList.add(patient);
+        System.out.println("Patient : " + patient.getName() + " successfully added.");
     }
 
     public Patients findPatient(String name){
@@ -83,12 +84,27 @@ public class Employees {
         return null;
     }
 
+
+    public int getPatientsIndexByName(String name){
+        for(int i = 0; i<patientsList.size(); i++){
+            if(patientsList.get(i).getName().equals(name)){
+                System.out.println("Patient found.");
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public List<Patients> getPatientsList() {
+        return patientsList;
+    }
+
     public List<String> getEmployeePatients(){
         List<String>patients = new ArrayList<>();
         for (var item: patientsList){
             patients.add(String.valueOf(item.getName()));
             patients.add(String.valueOf(item.getCondition()));
-            //patients.add(item.getRoom());
+            //patients.txt.add(item.getRoom());
         }
         return patients;
     }
